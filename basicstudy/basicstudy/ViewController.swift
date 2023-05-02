@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  basicstudy
 //
-//  Created by 맥 on 2023/04/28.
-//  Copyright © 2023 맥. All rights reserved.
+//  Created by 황준성 on 2023/05/02.
 //
 
 import UIKit

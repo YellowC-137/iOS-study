@@ -2,8 +2,7 @@
 //  SceneDelegate.swift
 //  basicstudy
 //
-//  Created by 맥 on 2023/04/28.
-//  Copyright © 2023 맥. All rights reserved.
+//  Created by 황준성 on 2023/05/02.
 //
 
 import UIKit
@@ -24,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
+        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
