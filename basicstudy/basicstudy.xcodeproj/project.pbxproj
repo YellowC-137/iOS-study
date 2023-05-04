@@ -16,6 +16,10 @@
 		106F518E2A00AB0C00971E65 /* basicstudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F518D2A00AB0C00971E65 /* basicstudyTests.swift */; };
 		106F51982A00AB0C00971E65 /* basicstudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F51972A00AB0C00971E65 /* basicstudyUITests.swift */; };
 		106F519A2A00AB0C00971E65 /* basicstudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F51992A00AB0C00971E65 /* basicstudyUITestsLaunchTests.swift */; };
+		10A53DA32A03AC990089B5CA /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 10A53DA22A03AC990089B5CA /* Collections */; };
+		10A53DA52A03AC990089B5CA /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 10A53DA42A03AC990089B5CA /* DequeModule */; };
+		10A53DA72A03AC990089B5CA /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 10A53DA62A03AC990089B5CA /* OrderedCollections */; };
+		10A53DAA2A03ACD20089B5CA /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 10A53DA92A03ACD20089B5CA /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A53DAA2A03ACD20089B5CA /* Algorithms in Frameworks */,
+				10A53DA32A03AC990089B5CA /* Collections in Frameworks */,
+				10A53DA52A03AC990089B5CA /* DequeModule in Frameworks */,
+				10A53DA72A03AC990089B5CA /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +151,12 @@
 			dependencies = (
 			);
 			name = basicstudy;
+			packageProductDependencies = (
+				10A53DA22A03AC990089B5CA /* Collections */,
+				10A53DA42A03AC990089B5CA /* DequeModule */,
+				10A53DA62A03AC990089B5CA /* OrderedCollections */,
+				10A53DA92A03ACD20089B5CA /* Algorithms */,
+			);
 			productName = basicstudy;
 			productReference = 106F51732A00AB0B00971E65 /* basicstudy.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,10 @@
 				Base,
 			);
 			mainGroup = 106F516A2A00AB0B00971E65;
+			packageReferences = (
+				10A53DA12A03AC990089B5CA /* XCRemoteSwiftPackageReference "swift-collections" */,
+				10A53DA82A03ACD20089B5CA /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 106F51742A00AB0B00971E65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -442,6 +460,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,6 +488,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -596,6 +616,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10A53DA12A03AC990089B5CA /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		10A53DA82A03ACD20089B5CA /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10A53DA22A03AC990089B5CA /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10A53DA12A03AC990089B5CA /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		10A53DA42A03AC990089B5CA /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10A53DA12A03AC990089B5CA /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		10A53DA62A03AC990089B5CA /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10A53DA12A03AC990089B5CA /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		10A53DA92A03ACD20089B5CA /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10A53DA82A03ACD20089B5CA /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 106F516B2A00AB0B00971E65 /* Project object */;
 }
