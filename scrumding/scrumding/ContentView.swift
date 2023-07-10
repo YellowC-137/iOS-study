@@ -23,7 +23,10 @@ struct ContentView: View {
                     Label("0",systemImage: "hourglass.bottomhalf.fill")
                 }
                 
-            }
+            }.accessibilityElement(children: .ignore)
+                .accessibilityLabel("Reamin Time")
+                .accessibilityValue("50 minutes")
+            
             Circle().strokeBorder(lineWidth: 24)
             
             HStack{
@@ -33,6 +36,7 @@ struct ContentView: View {
                     Image(systemName: "forward.fill")
                 }
             }
+            .accessibilityLabel("NEXT")
             
         }
         .padding()
