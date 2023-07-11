@@ -16,17 +16,18 @@ struct CardView: View {
             Spacer()
             HStack{
                 Spacer()
-                Label("\(scrum.attendees.count)",systemImage: "person.3")
+                Label("\(scrum.attendees.count)", systemImage: "person.3")
                     .accessibilityLabel("\(scrum.attendees.count) attendees")
                 Spacer()
-                Label("\(scrum.lengthInMinutes)",systemImage: "clock")
-                    .accessibilityLabel("\(scrum.lengthInMinutes) meeting minute")
+                Label("\(scrum.lengthInMinutes)", systemImage: "clock")
+                    .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
                     .labelStyle(.trailingIcon)
                 Spacer()
             }
             .font(.largeTitle)
         }
-        .foregroundColor(scrum.theme.accentColor)
+        .padding()
+        .foregroundColor(.orange) // 색상 변경
     }
 }
 

@@ -18,8 +18,8 @@ extension Daily {
     static let sampleData : [Daily] =
     [
         Daily(title: "Design", attendees: ["A","B","C"], lengthInMinutes: 5, theme: .yellow),
-        Daily(title: "App Dev", attendees: ["Z","W","V","Q","L"], lengthInMinutes: 30, theme: .buttercup),
-        Daily(title: "Web Dev", attendees: ["D","S","Y","V"], lengthInMinutes: 16, theme: .oxblood)
+        Daily(title: "App Dev", attendees: ["Z","W","V","Q","L"], lengthInMinutes: 30, theme: .orange),
+        Daily(title: "Web Dev", attendees: ["D","S","Y","V"], lengthInMinutes: 16, theme: .poppy),
     ]
 }
 

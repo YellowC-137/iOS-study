@@ -5,8 +5,8 @@
 //  Created by 황준성 on 2023/07/11.
 //
 
-import Foundation
 import SwiftUI
+
 
 enum Theme: String {
     case bubblegum
@@ -27,13 +27,12 @@ enum Theme: String {
     case yellow
     
     var accentColor: Color {
-          switch self {
-          case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
-          case .indigo, .magenta, .navy, .oxblood, .purple: return .white
-          }
-      }
-    
-    var mainColor : Color {
+        switch self {
+        case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
+        case .indigo, .magenta, .navy, .oxblood, .purple: return .white
+        }
+    }
+    var mainColor: Color {
         Color(rawValue)
     }
 }
