@@ -16,6 +16,7 @@
 		10F20B872A5CEADA0052A76B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20B862A5CEADA0052A76B /* CardView.swift */; };
 		10F20B892A5D170C0052A76B /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20B882A5D170C0052A76B /* TrailingIconLabelStyle.swift */; };
 		10F20B8B2A5D2EE50052A76B /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20B8A2A5D2EE50052A76B /* ScrumsView.swift */; };
+		10F20B8E2A5D423F0052A76B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20B8D2A5D423F0052A76B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		10F20B862A5CEADA0052A76B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		10F20B882A5D170C0052A76B /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		10F20B8A2A5D2EE50052A76B /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		10F20B8D2A5D423F0052A76B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				10EFBC232A57FC930001F2C9 /* ContentView.swift */,
 				10F20B862A5CEADA0052A76B /* CardView.swift */,
 				10F20B8A2A5D2EE50052A76B /* ScrumsView.swift */,
+				10F20B8D2A5D423F0052A76B /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10F20B832A5CE5940052A76B /* Theme.swift in Sources */,
+				10F20B8E2A5D423F0052A76B /* DetailView.swift in Sources */,
 				10F20B892A5D170C0052A76B /* TrailingIconLabelStyle.swift in Sources */,
 				10F20B852A5CE93E0052A76B /* Daily.swift in Sources */,
 				10F20B8B2A5D2EE50052A76B /* ScrumsView.swift in Sources */,

@@ -26,8 +26,7 @@ struct CardView: View {
             }
             .font(.largeTitle)
         }
-        .padding()
-        .foregroundColor(.orange) // 색상 변경
+        .foregroundColor(scrum.theme.accentColor)
     }
 }
 
