@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct DetailView: View {
-    let scrum : Daily
+    @Binding var scrum : Daily
+    @State private var editScrum = Daily.emptyScrum
     @State private var isPresentingEditView = false
     var body: some View {
         List{
@@ -23,7 +24,7 @@ struct DetailView: View {
                     Text("\(scrum.lengthInMinutes) min")
                 }.accessibilityElement(children: .combine)
                 HStack {
-                                   Label("Theme", systemImage: "paintpalette")
+                    Label("Theme", systemImage: "paintpalette")
                     Spacer()
                     Text(scrum.theme.name)
                                         .padding(4)
@@ -44,11 +45,12 @@ struct DetailView: View {
         .toolbar{
             Button("Edit"){
                 isPresentingEditView = true
+                editScrum = scrum
             }
         }
         .sheet(isPresented: $isPresentingEditView){
             NavigationStack{
-                DetailEdit().navigationTitle(scrum.title)
+                DetailEdit(scrum: $editScrum).navigationTitle(scrum.title)
                     .toolbar{
                         ToolbarItem(placement: .cancellationAction){
                             Button("exit"){
@@ -58,10 +60,10 @@ struct DetailView: View {
                         ToolbarItem(placement: .confirmationAction){
                             Button("finish"){
                                 isPresentingEditView = false
+                                scrum = editScrum
                             }
                         }
                     }
-                
             }
         }
     }
@@ -71,7 +73,7 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-              DetailView(scrum: Daily.sampleData[0])
+            DetailView(scrum: .constant(Daily.sampleData[0]))
           }
     }
 }
