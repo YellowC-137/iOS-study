@@ -14,10 +14,9 @@ struct DetailView: View {
     var body: some View {
         List{
             Section(header: Text("Info")){
-                NavigationLink(destination: ContentView()){
+                NavigationLink(destination: ContentView(scrum: $scrum)){
                     Label("Meeting",systemImage: "timer").font(.headline).foregroundColor(.accentColor)
                 }
-                
                 HStack{
                     Label("Time",systemImage: "clock")
                     Spacer()

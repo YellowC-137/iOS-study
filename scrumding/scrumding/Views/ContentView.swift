@@ -8,25 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding var scrum : Daily
+    @StateObject var scrumTimer = ScrumTimer()
     var body: some View {
+        ZStack{
+            RoundedRectangle(cornerRadius: 20.0).fill(scrum.theme.mainColor)
         VStack {
-            ProgressView(value: 5, total: 15)
-            //기본 정렬은 center 이고 leading,trailing으로 좌우 정렬
-            HStack{
-                VStack(alignment: .leading){
-                    Text("Elapsed")
-                    Label("3000",systemImage: "hourglass.tophalf.fill")
-                }
-                Spacer()
-                VStack(alignment: .trailing)
-                {Text("Remained")
-                    Label("0",systemImage: "hourglass.bottomhalf.fill")
-                }
-                
-            }.accessibilityElement(children: .ignore)
-                .accessibilityLabel("Reamin Time")
-                .accessibilityValue("50 minutes")
-            
+            MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
+           
             Circle().strokeBorder(lineWidth: 24)
             
             HStack{
@@ -38,13 +27,16 @@ struct ContentView: View {
             }
             .accessibilityLabel("NEXT")
             
-        }
+        }.padding()
+    }
         .padding()
+        .foregroundColor(scrum.theme.accentColor)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(scrum: .constant(Daily.sampleData[0]))
     }
 }
