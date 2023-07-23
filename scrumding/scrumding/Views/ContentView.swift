@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     @Binding var scrum : Daily
@@ -17,7 +18,7 @@ struct ContentView: View {
             MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
            
             Circle().strokeBorder(lineWidth: 24)
-            
+            MeetingFooterView(spearks: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             HStack{
                 Text("1 / 3")
                 Spacer()
@@ -31,6 +32,13 @@ struct ContentView: View {
     }
         .padding()
         .foregroundColor(scrum.theme.accentColor)
+        .onAppear{
+            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees),
+            scrumTimer.startScrum()
+        }
+        .onDisappear{
+            scrumTimer.stopScrum()
+            }
         .navigationBarTitleDisplayMode(.inline)
     }
 }

@@ -24,6 +24,7 @@
 		10F20B892A5D170C0052A76B /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20B882A5D170C0052A76B /* TrailingIconLabelStyle.swift */; };
 		10F20B8B2A5D2EE50052A76B /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20B8A2A5D2EE50052A76B /* ScrumsView.swift */; };
 		10F20B8E2A5D423F0052A76B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F20B8D2A5D423F0052A76B /* DetailView.swift */; };
+		57588F3E2A6BB75F00FCE2B8 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588F3D2A6BB75F00FCE2B8 /* MeetingFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		10F20B882A5D170C0052A76B /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		10F20B8A2A5D2EE50052A76B /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		10F20B8D2A5D423F0052A76B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		57588F3D2A6BB75F00FCE2B8 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				1011C7072A5E635600309F08 /* ThemeView.swift */,
 				1011C7092A5E647C00309F08 /* ThemePicker.swift */,
 				108186252A61110500EDF370 /* MeetingHeaderView.swift */,
+				57588F3D2A6BB75F00FCE2B8 /* MeetingFooterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				10F0068C2A61195A00C1D756 /* ScrumTimer.swift in Sources */,
 				10F20B832A5CE5940052A76B /* Theme.swift in Sources */,
 				10F0068E2A61196100C1D756 /* AVPlayer+Ding.swift in Sources */,
+				57588F3E2A6BB75F00FCE2B8 /* MeetingFooterView.swift in Sources */,
 				1011C7062A5E40C700309F08 /* DetailEdit.swift in Sources */,
 				108186262A61110500EDF370 /* MeetingHeaderView.swift in Sources */,
 				10F20B8E2A5D423F0052A76B /* DetailView.swift in Sources */,

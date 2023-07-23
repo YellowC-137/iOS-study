@@ -37,7 +37,10 @@ struct MeetingHeaderView: View {
             }
             
             Spacer()
-            
+            Button(action: skipAction){
+                
+                Image(systemName: "forward.fill")
+            }
             VStack(alignment: .trailing)
             {Text("Remained")
                 Label("\(secondsRemaining)",systemImage: "hourglass.bottomhalf.fill").labelStyle(.trailingIcon)
@@ -49,6 +52,7 @@ struct MeetingHeaderView: View {
             .accessibilityLabel("Remain Time")
             .accessibilityValue("\(minutesRemaining) minutes")
             .padding([.top,.horizontal])
+            .padding([.bottom,.horizontal])
     }
 }
 
