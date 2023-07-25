@@ -30,15 +30,23 @@ struct MeetingFooterView: View {
     var body: some View {
         VStack{
             HStack{
-                if isLastSpeaker{}
-                Text("")
+                if isLastSpeaker{
+                    Text("END")
+                }
+                else{
+                    Text(spearkText)
+                    Spacer()
+                    Button(action:skipAction){
+                        Image(systemName: "arrowshape.bounce.forward")
+                    }.accessibilityLabel("NEXT")
+                }
             }
-        }
+        }.padding([.bottom,.horizontal])
     }
 }
 
 struct MeetingFooterView_Previews: PreviewProvider {
     static var previews: some View {
-        MeetingFooterView()
+        MeetingFooterView(spearks: Daily.sampleData[0].attendees.speakers, skipAction: {}).previewLayout(.sizeThatFits)
     }
 }

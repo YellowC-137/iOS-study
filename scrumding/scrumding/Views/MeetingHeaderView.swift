@@ -12,6 +12,8 @@ struct MeetingHeaderView: View {
     let secondsRemaining: Int
     let theme: Theme
     
+    var skipAction: ()->Void
+    
     private var totalSeconds : Int{
         secondsElapsed + secondsRemaining
     }
@@ -58,7 +60,7 @@ struct MeetingHeaderView: View {
 
 struct MeetingHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180,theme: .magenta)
+        MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180,theme: .magenta, skipAction: {})
                    .previewLayout(.sizeThatFits)
     }
 }
