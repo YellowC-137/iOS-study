@@ -6,29 +6,22 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController{
+
     
+    @IBOutlet weak var maintext: UILabel!
+
     
-    
+    @IBOutlet weak var cameratext: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        var label = UILabel()
         
     }
     //NavigationController
-    
-    @IBAction func Button_Clicked(_ sernder: UIButton){
-        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController")
-        vcName?.modalPresentationStyle = .fullScreen
-        vcName?.modalTransitionStyle = .flipHorizontal
-        self.present(vcName!, animated: true, completion: nil)
-        
-        
-    }
-        
 
-
+        
 }
 
