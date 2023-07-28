@@ -7,12 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController{
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .black
+        var label = UILabel()
+        
     }
+    //NavigationController
+    
+    @IBAction func Button_Clicked(_ sernder: UIButton){
+        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController")
+        vcName?.modalPresentationStyle = .fullScreen
+        vcName?.modalTransitionStyle = .flipHorizontal
+        self.present(vcName!, animated: true, completion: nil)
+        
+        
+    }
+        
 
 
 }
