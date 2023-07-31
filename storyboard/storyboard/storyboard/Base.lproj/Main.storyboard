@@ -119,18 +119,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="SeconfInfoText" text="환영합니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-sq-Qpv">
-                                <rect key="frame" x="160" y="182" width="74" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="raorange"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="SecondMainStack" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XPP-Yu-AYF">
-                                <rect key="frame" x="41.396449704155884" y="370.19230769229614" width="308.66666666666669" height="103"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="SecondMainStack" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XPP-Yu-AYF">
+                                <rect key="frame" x="42.333333333333343" y="369.66666666666669" width="308.66666666666663" height="103"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAd-xH-I7p">
-                                        <rect key="frame" x="36.666666666666671" y="0.0" width="235.66666666666663" height="34.333333333333336"/>
+                                        <rect key="frame" x="36.333333333333329" y="0.0" width="235.66666666666669" height="34.333333333333336"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ex-3G-SN0" customClass="DLRadioButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
@@ -146,7 +139,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xR0-U6-9lR">
-                                        <rect key="frame" x="35.999999999999986" y="34.333333333333329" width="236.66666666666663" height="34.333333333333329"/>
+                                        <rect key="frame" x="35.999999999999986" y="34.333333333333314" width="236.66666666666663" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6H-zR-geg" customClass="DLRadioButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
@@ -166,7 +159,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcm-4z-vh0">
-                                        <rect key="frame" x="0.0" y="68.666666666666671" width="308.66666666666669" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="68.666666666666629" width="308.66666666666669" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf7-2c-rlT" customClass="DLRadioButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
@@ -187,13 +180,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QT5-8z-9ip">
-                                <rect key="frame" x="175" y="197" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="SecondButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqc-oN-kpn">
                                 <rect key="frame" x="32" y="700" width="343" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -204,15 +190,26 @@
                                     <segue destination="MIa-rR-cg9" kind="show" id="kTN-Pa-Eav"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="SecondInfoText" text="환영합니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-sq-Qpv">
+                                <rect key="frame" x="43" y="176" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="raorange"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uku-ta-SWo"/>
                         <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="XPP-Yu-AYF" firstAttribute="centerX" secondItem="Uku-ta-SWo" secondAttribute="centerX" id="9aI-7A-D8x"/>
+                            <constraint firstItem="XPP-Yu-AYF" firstAttribute="centerY" secondItem="Uku-ta-SWo" secondAttribute="centerY" id="XtH-6N-Fgl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="86f-Zv-lYr"/>
                     <connections>
                         <outlet property="RadioAllButton" destination="6ex-3G-SN0" id="5hr-D5-3GA"/>
                         <outlet property="SecondButton" destination="Vqc-oN-kpn" id="gl7-Wm-SKe"/>
-                        <outlet property="text1" destination="jRO-sq-Qpv" id="zpJ-kb-3tg"/>
+                        <outlet property="subtext" destination="jRO-sq-Qpv" id="6NT-dh-SWh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYM-Tg-YRq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

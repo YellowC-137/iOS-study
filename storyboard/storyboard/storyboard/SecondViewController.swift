@@ -10,8 +10,8 @@ import UIKit
 import DLRadioButton
 
 class SecondViewController: UIViewController {
-    @IBOutlet weak var text1: UILabel!
 
+    @IBOutlet weak var subtext: UILabel!
     @IBOutlet weak var RadioAllButton: DLRadioButton!
     
     @IBOutlet weak var RadioButtonOne: DLRadioButton!
@@ -23,8 +23,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         view.backgroundColor = .black
-        text1.text = "환영합니다.\n서비스 이용약관에 동의해주세요."
-        text1.font = UIFont.boldSystemFont(ofSize: 16)
+        subtext.text = "환영합니다.\n서비스 이용약관에 동의해주세요."
+        subtext.font = UIFont.boldSystemFont(ofSize: 16)
         
     }
 }
