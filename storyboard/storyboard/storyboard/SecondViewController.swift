@@ -12,6 +12,13 @@ import DLRadioButton
 class SecondViewController: UIViewController {
     @IBOutlet weak var text1: UILabel!
 
+    @IBOutlet weak var RadioAllButton: DLRadioButton!
+    
+    @IBOutlet weak var RadioButtonOne: DLRadioButton!
+    
+    @IBOutlet weak var RadioButtonTwo: DLRadioButton!
+    
+    @IBOutlet weak var SecondButton: UIButton!
     
     override func viewDidLoad(){
         super.viewDidLoad()
