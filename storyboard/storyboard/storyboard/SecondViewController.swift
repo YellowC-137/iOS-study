@@ -11,26 +11,24 @@ import DLRadioButton
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var TableView: UITableView!
     let raorange = UIColor(named: "raorange")
-    
+    let dataSources :[String] = ["전체 약관에 동의합니다.", "서비스 이용약관(필수)" , "개인정보 수집 및 이용동의(필수)"]
     @IBOutlet weak var subtext: UILabel!
-    @IBOutlet weak var RadioAllButton: DLRadioButton!
-    @IBOutlet weak var FirstButton: DLRadioButton!
-    @IBOutlet weak var SecondButton: DLRadioButton!
+
+    @IBOutlet weak var ConfirmButton: UIButton!
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        ConfirmButton.isEnabled = false
+        ConfirmButton.isHidden = false
         view.backgroundColor = .black
         subtext.text = "환영합니다.\n서비스 이용약관에 동의해주세요."
         subtext.font = UIFont.boldSystemFont(ofSize: 16)
         
-        setButtons()
+        TableView.delegate = self
+        TableView.dataSource = self
     }
     
-    func setButtons(){
-        RadioAllButton.iconColor = raorange!
-        FirstButton.iconColor = raorange!
-        SecondButton.iconColor = raorange!
 
-    }
 }
