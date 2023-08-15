@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import DLRadioButton
 
-class SecondViewController: UIViewController {
+class TermsViewController: UIViewController {
 
     @IBOutlet weak var TableView: UITableView!
     let raorange = UIColor(named: "raorange")
@@ -26,8 +26,6 @@ class SecondViewController: UIViewController {
         subtext.text = "환영합니다.\n서비스 이용약관에 동의해주세요."
         subtext.font = UIFont.boldSystemFont(ofSize: 16)
         
-        TableView.delegate = self
-        TableView.dataSource = self
     }
     
 

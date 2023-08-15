@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class ViewController: UIViewController{
+class MainViewController: UIViewController{
 
     
     @IBOutlet weak var maintext: UILabel!

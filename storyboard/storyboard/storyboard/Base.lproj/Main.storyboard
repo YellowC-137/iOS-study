@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ViewController" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="확인" buttonSize="large"/>
                                 <connections>
-                                    <segue destination="1hs-aR-8vp" kind="show" id="Mwa-U0-jYG"/>
+                                    <segue destination="1hs-aR-8vp" kind="show" id="jaM-KS-ynw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="앱 접근 권한 안내" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAJ-eH-wx8">
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="17.557251908396946" y="-27.464788732394368"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Terms View Controller-->
         <scene sceneID="sf3-pV-bpA">
             <objects>
-                <viewController id="1hs-aR-8vp" customClass="SecondViewController" customModule="storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1hs-aR-8vp" customClass="TermsViewController" customModule="storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="SecondViewController" id="F5T-ji-KrK" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +126,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="동의하기"/>
                                 <connections>
-                                    <segue destination="MIa-rR-cg9" kind="show" id="kTN-Pa-Eav"/>
+                                    <segue destination="MIa-rR-cg9" kind="show" id="le0-al-E4k"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="SecondInfoText" text="환영합니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-sq-Qpv">
