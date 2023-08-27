@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  o2
+//  scroll
 //
-//  Created by jsh on 2023/08/20.
+//  Created by jsh on 2023/08/27.
 //
 
 import UIKit
