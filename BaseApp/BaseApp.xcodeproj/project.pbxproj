@@ -101,14 +101,15 @@
 		10193D1D2C60A7A100BDC2A9 /* BaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				10193D5B2C60AACA00BDC2A9 /* Util */,
+				10193D5A2C60AAC200BDC2A9 /* Resources */,
+				10193D592C60AABA00BDC2A9 /* StoryBoard */,
+				10193D582C60AAB400BDC2A9 /* ViewController */,
+				10193D572C60AAAB00BDC2A9 /* Manager */,
+				10193D562C60AAA400BDC2A9 /* Models */,
+				10193D552C60AA9D00BDC2A9 /* Define */,
 				10193D1E2C60A7A100BDC2A9 /* AppDelegate.swift */,
 				10193D202C60A7A100BDC2A9 /* SceneDelegate.swift */,
-				10193D222C60A7A100BDC2A9 /* ViewController.swift */,
-				10193D242C60A7A100BDC2A9 /* Main.storyboard */,
-				10193D2A2C60A7A200BDC2A9 /* Assets.xcassets */,
-				10193D2C2C60A7A200BDC2A9 /* LaunchScreen.storyboard */,
-				10193D2F2C60A7A200BDC2A9 /* Info.plist */,
-				10193D272C60A7A100BDC2A9 /* BaseApp.xcdatamodeld */,
 			);
 			path = BaseApp;
 			sourceTree = "<group>";
@@ -128,6 +129,69 @@
 				10193D442C60A7A200BDC2A9 /* BaseAppUITestsLaunchTests.swift */,
 			);
 			path = BaseAppUITests;
+			sourceTree = "<group>";
+		};
+		10193D552C60AA9D00BDC2A9 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		10193D562C60AAA400BDC2A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		10193D572C60AAAB00BDC2A9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		10193D582C60AAB400BDC2A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10193D222C60A7A100BDC2A9 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		10193D592C60AABA00BDC2A9 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				10193D242C60A7A100BDC2A9 /* Main.storyboard */,
+				10193D2C2C60A7A200BDC2A9 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		10193D5A2C60AAC200BDC2A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10193D2A2C60A7A200BDC2A9 /* Assets.xcassets */,
+				10193D2F2C60A7A200BDC2A9 /* Info.plist */,
+				10193D272C60A7A100BDC2A9 /* BaseApp.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		10193D5B2C60AACA00BDC2A9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				10193D5C2C60AAFE00BDC2A9 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		10193D5C2C60AAFE00BDC2A9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

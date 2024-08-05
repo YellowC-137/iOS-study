@@ -1,0 +1,9 @@
+xcassets:
+  inputs:
+    - ${PROJECT_DIR}/CostaRicaRaon/Resources/Colors.xcassets
+    - ${PROJECT_DIR}/CostaRicaRaon/Resources/Images.xcassets
+  outputs:
+    - templateName: swift5
+      output: ${PROJECT_DIR}/CostaRicaRaon/Resources/Assets.swift
+      params:
+          enumName: Gen
