@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Scrumdinger
+//  TCA
 //
 //  Created by 황준성 on 1/13/25.
 //
@@ -24,7 +24,6 @@ struct ContentView: View {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
-                            .multilineTextAlignment(.center)
                     }
                 }
                 .onDelete(perform: deleteItems)
