@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Scrumdinger
+//  Landmarks
 //
 //  Created by 황준성 on 1/13/25.
 //
@@ -22,14 +22,8 @@ struct ContentView: View {
                 ForEach(items) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.red)
-                            .font(.largeTitle)
-                            .fontWeight(.light)
-
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
-                            .multilineTextAlignment(.center)
                     }
                 }
                 .onDelete(perform: deleteItems)
