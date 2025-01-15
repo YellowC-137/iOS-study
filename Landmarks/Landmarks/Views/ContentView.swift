@@ -9,11 +9,17 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    //CoreData 가져옴
+    //viewContext로 데이터베이스 접근
     @Environment(\.managedObjectContext) private var viewContext
 
+    //CoreData 접근 요청
+    //tiemstamp 기준으로 정렬
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
+    //FetchedResults는 FetchRequest로 가져온 데이터, 자동으로 업데이트
+    //단독사용 불가
     private var items: FetchedResults<Item>
 
     var body: some View {
@@ -21,11 +27,13 @@ struct ContentView: View {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        //상세 화면으로 이동
+                        SwiftUIView()
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
                     }
                 }
+                //리스트 항목 제거 기능
                 .onDelete(perform: deleteItems)
             }
             .toolbar {

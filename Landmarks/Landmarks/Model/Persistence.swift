@@ -7,16 +7,21 @@
 
 import CoreData
 
+//CoreData 관리 구조체
 struct PersistenceController {
     static let shared = PersistenceController()
 
+    //CoreData 초기화 및 설정
     @MainActor
+    //메인 스레드에서 작업
     static let preview: PersistenceController = {
+        //메모리 전용 데이터 저장 및 프리뷰 제공
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
+            //임시로 10개의 현재시간 저장
         }
         do {
             try viewContext.save()
@@ -29,13 +34,16 @@ struct PersistenceController {
         return result
     }()
 
+    //데이터 모델, 영구 컨테이너
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Landmarks")
         if inMemory {
-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+            //데이터를 파일이 아닌 메모리에 저장
+            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null") //가상의 저장소, 저장하지 않음.
         }
+        //데이터 로드
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
