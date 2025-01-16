@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct SwiftUIView: View {
+    @State private var selection: Tab = .featured
+    
+    enum Tab {
+        case featured
+        case list
+    }
     
     var body: some View {
-        LandmarkList()
+        TabView(selection: $selection) {
+            CategoryView()
+                .tabItem {
+                    Label("Featured", systemImage: "star")
+                }
+                .tag(Tab.featured)
+            LandmarkList()
+                .tabItem{
+                    Label("List", systemImage: "list.bullet")
+                }
+                .tag(Tab.list)
+        }
     }
 
 }
@@ -19,3 +36,4 @@ struct SwiftUIView: View {
     //Model Object 추가, 서브뷰들에 오브젝트 사용가능하게함
     SwiftUIView().environment(ModelData())
 }
+

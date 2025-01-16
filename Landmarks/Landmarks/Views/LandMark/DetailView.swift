@@ -60,4 +60,5 @@ struct DetailView: View {
 
 #Preview {
     DetailView(landmark: ModelData().landmarks[1])
+        .environment(ModelData())
 }

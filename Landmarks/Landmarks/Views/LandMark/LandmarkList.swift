@@ -58,5 +58,7 @@ struct LandmarkList: View {
 }
 
 #Preview {
+    //데이터 주입 필요
     LandmarkList()
+        .environment(ModelData())
 }

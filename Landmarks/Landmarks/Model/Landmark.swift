@@ -17,6 +17,16 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var isFavorite: Bool
+    var isFeatured: Bool
+    
+    
+    var category: Category
+    enum Category : String, CaseIterable, Codable {
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+    }
+    
     
     //구조체 내부에 SwiftUI이미지
     private var imageName: String
