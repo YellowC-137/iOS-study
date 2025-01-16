@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		10BB49012D38EDE9007CAD55 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 10BB49002D38EDE9007CAD55 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1045EDBE2D34F66900AFB65C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BB49012D38EDE9007CAD55 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = TCA;
 			packageProductDependencies = (
+				10BB49002D38EDE9007CAD55 /* ComposableArchitecture */,
 			);
 			productName = TCA;
 			productReference = 1045EDA82D34F66800AFB65C /* TCA.app */;
@@ -572,6 +578,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10BB49002D38EDE9007CAD55 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1045EDDA2D34F69700AFB65C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1045EDA02D34F66800AFB65C /* Project object */;
 }
