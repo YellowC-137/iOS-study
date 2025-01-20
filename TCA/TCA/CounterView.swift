@@ -30,10 +30,20 @@ struct CounterView: View {
             }
             
             Button("FACT"){
-                store.send()
+                store.send(.factButtonTapped)
             }
             .font(.largeTitle)
-            .frame(width: 50,height: 50)
+            .frame(width: 100,height: 50)
+            
+            Button(store.timeIsRunningOut ? "Stop Timer" : "Start Timer") {
+                store.send(.toogleTimerButtonTapped)
+            }
+            .font(.largeTitle)
+            .padding()
+            .background(Color.black.opacity(0.1))
+            .cornerRadius(10)
+            
+            
         }
         if store.isLoading {
             ProgressView()
