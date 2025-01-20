@@ -33,12 +33,27 @@
 		1045EDC72D34F66900AFB65C /* TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1045EDAA2D34F66800AFB65C /* TCA */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TCA;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		10CC60822D3E32380064E8FE /* Exceptions for "TCA" folder in "TCA" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TCA.xcdatamodeld,
+			);
+			target = 1045EDA72D34F66800AFB65C /* TCA */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		10CC60832D3E32380064E8FE /* Exceptions for "TCA" folder in "Compile Sources" phase from "TCA" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 1045EDA42D34F66800AFB65C /* Sources */;
+			membershipExceptions = (
+				TCA.xcdatamodeld,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		1045EDC02D34F66900AFB65C /* TCATests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TCATests;
@@ -47,6 +62,15 @@
 		1045EDCA2D34F66900AFB65C /* TCAUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TCAUITests;
+			sourceTree = "<group>";
+		};
+		10CC60782D3E32380064E8FE /* TCA */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				10CC60822D3E32380064E8FE /* Exceptions for "TCA" folder in "TCA" target */,
+				10CC60832D3E32380064E8FE /* Exceptions for "TCA" folder in "Compile Sources" phase from "TCA" target */,
+			);
+			path = TCA;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -80,7 +104,7 @@
 		1045ED9F2D34F66800AFB65C = {
 			isa = PBXGroup;
 			children = (
-				1045EDAA2D34F66800AFB65C /* TCA */,
+				10CC60782D3E32380064E8FE /* TCA */,
 				1045EDC02D34F66900AFB65C /* TCATests */,
 				1045EDCA2D34F66900AFB65C /* TCAUITests */,
 				1045EDA92D34F66800AFB65C /* Products */,
@@ -113,7 +137,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1045EDAA2D34F66800AFB65C /* TCA */,
+				10CC60782D3E32380064E8FE /* TCA */,
 			);
 			name = TCA;
 			packageProductDependencies = (
